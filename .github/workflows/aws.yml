@@ -27,8 +27,7 @@
 name: Deploy to Amazon ECS
 
 on:
-  push:
-    branches: [ "main" ]
+  workflow_dispatch:  # Enables manual triggering via API or UI
 
 env:
   AWS_REGION: af-south-1
