@@ -27,7 +27,8 @@
 name: Deploy to Amazon ECS
 
 on:
-  workflow_dispatch:  # Enables manual triggering via API or UI
+  repository_dispatch:  # Enables manual triggering via API or UI
+    types: [n8n-deploy]
 
 env:
   AWS_REGION: af-south-1
